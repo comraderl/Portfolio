@@ -464,7 +464,7 @@ const projects: Project[] = [
           <ProjectsLinks live={this.live} />
           <SlideShow
             images={[
-              "/assets/projects-screenshots/multimedia-guby-roger.jpeg",
+              "/assets/projects-screenshots/guby-roger.png",
             ]}
           />
           <TypographyH3 className="my-4 mt-8">Operations & Production Management</TypographyH3>
