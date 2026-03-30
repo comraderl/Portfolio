@@ -29,7 +29,7 @@ const config = {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    github: "https://github.com/AnmolSharmaz",
+    github: "https://github.com/comraderl",
     linkedin: "https://www.linkedin.com/in/anmol001",
     twitter: "https://twitter.com/AnmolSharmaz",
     instagram: "https://www.instagram.com/anmol.sharma009/",

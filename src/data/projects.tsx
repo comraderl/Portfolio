@@ -30,7 +30,7 @@ import {
 import { TbBrandFramerMotion } from "react-icons/tb";
 const BASE_PATH = "/assets/projects-screenshots";
 
-const ProjectsLinks = ({ live, repo }: { live: string; repo?: string }) => {
+export const ProjectsLinks = ({ live, repo }: { live: string; repo?: string }) => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-start gap-3 my-3 mb-8">
       <Link
@@ -67,7 +67,7 @@ export type Skill = {
   fg: string;
   icon: ReactNode;
 };
-const PROJECT_SKILLS = {
+export const PROJECT_SKILLS = {
   next: {
     title: "Next.js",
     bg: "black",
@@ -257,7 +257,7 @@ const projects: Project[] = [
       ],
     },
     live: "https://baba-tillu-demo.vercel.app",
-    github: "https://github.com/dummy/baba-tillu",
+    github: "https://github.com/comraderl",
     get content() {
       return (
         <div>
@@ -290,7 +290,7 @@ const projects: Project[] = [
     src: "/assets/projects-screenshots/skillvault-proto.png",
     screenshots: ["skillvault-proto.png"],
     live: "https://skillvault-demo.vercel.app",
-    github: "https://github.com/dummy/skillvault",
+    github: "https://github.com/comraderl",
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
@@ -340,7 +340,7 @@ const projects: Project[] = [
     src: "/assets/projects-screenshots/zenaudio-proto.png",
     screenshots: ["zenaudio-proto.png"],
     live: "https://zenaudio-demo.vercel.app",
-    github: "https://github.com/dummy/zenaudio",
+    github: "https://github.com/comraderl",
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
@@ -383,148 +383,6 @@ const projects: Project[] = [
             Find your perfect podcast match in seconds. No endless scrolling, no genre
             limitations. Join thousands of podcast enthusiasts who discovered their
             favorite shows through ZenAudio&apos;s intelligent recommendation system.
-          </p>
-        </div>
-      );
-    },
-  },
-  {
-    id: "android-internship",
-    category: "Experience & Training",
-    title: "Android App Development Internship",
-    src: "/assets/projects-screenshots/android-internship.png",
-    screenshots: ["android-internship.png"],
-    live: "https://android-internship-demo.vercel.app",
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.js,
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.mongo,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono ">
-            During my Android App Development internship, I gained hands-on experience
-            in building native Android applications. I learned mobile app architecture,
-            UI/UX design for mobile platforms, and best practices in Android development.
-            This internship strengthened my understanding of mobile-first development
-            and cross-platform considerations.
-          </TypographyP>
-          <ProjectsLinks live={this.live} />
-          <SlideShow
-            images={[
-              "/assets/projects-screenshots/android-internship.png",
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Android Development Skills</TypographyH3>
-          <p className="font-mono mb-2">
-            Developed proficiency in Android SDK, native application development,
-            and mobile UI design principles. Built responsive applications with proper
-            state management and performance optimization for mobile devices.
-          </p>
-        </div>
-      );
-    },
-  },
-  {
-    id: "multimedia-operations",
-    category: "Media & Production",
-    title: "Head of Operations - Guby Roger",
-    src: "/assets/projects-screenshots/guby-roger.png",
-    screenshots: ["guby-roger.png"],
-    live: "https://guby-roger-demo.vercel.app",
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.mongo,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono ">
-            As Head of Operations at Guby Roger, I managed media operations and
-            handled pre and post-production of client projects. This role involved
-            coordinating production timelines, managing assets, quality assurance,
-            and ensuring deliverables met client specifications and deadlines.
-          </TypographyP>
-          <ProjectsLinks live={this.live} />
-          <SlideShow
-            images={[
-              "/assets/projects-screenshots/guby-roger.png",
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Operations & Production Management</TypographyH3>
-          <p className="font-mono mb-2">
-            Managed end-to-end production workflows, coordinated team resources,
-            and ensured quality standards. Developed processes for efficient media
-            handling, client communication, and project delivery optimization.
-          </p>
-        </div>
-      );
-    },
-  },
-  {
-    id: "accidental-engineer",
-    category: "Film & Entertainment",
-    title: "Junior Artist - The Accidental Engineer",
-    src: "/assets/projects-screenshots/accidental-engineer.png",
-    screenshots: [
-      "accidental-engineer.png",
-      "accidental-engineer-2.jpeg",
-      "accidental-engineer-3.jpeg",
-      "accidental-engineer-4.jpeg",
-      "accidental-engineer-5.jpeg",
-    ],
-    live: "https://accidental-engineer-demo.vercel.app",
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-        PROJECT_SKILLS.framerMotion,
-      ],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.express,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono ">
-            As a Junior Artist (Actor) with The Accidental Engineer, I contributed
-            to multimedia content creation and production. This experience involved
-            on-set performance, content collaboration, and understanding the creative
-            process behind technical and artistic projects.
-          </TypographyP>
-          <ProjectsLinks live={this.live} />
-          <SlideShow
-            images={[
-              "/assets/projects-screenshots/accidental-engineer.png",
-              "/assets/projects-screenshots/accidental-engineer-2.jpeg",
-              "/assets/projects-screenshots/accidental-engineer-3.jpeg",
-              "/assets/projects-screenshots/accidental-engineer-4.jpeg",
-              "/assets/projects-screenshots/accidental-engineer-5.jpeg",
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Creative & Performance Experience</TypographyH3>
-          <p className="font-mono mb-2">
-            Developed skills in on-screen performance, content creation, and creative
-            collaboration. Learned how to work effectively with production teams and
-            contribute meaningfully to multimedia projects and content development.
           </p>
         </div>
       );
